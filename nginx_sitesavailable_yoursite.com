@@ -9,12 +9,12 @@ server {
         include snippets/self-signed.conf;
         include snippets/ssl-params.conf;
 
-        root /var/www/grandstrandmvc.com/html;
+        root /var/www/your_site.com/html;
 
         # Add index.php to the list if you are using PHP
         index index.php index.html index.htm index.nginx-debian.html;
 
-        server_name grandstrandmvc.com www.grandstrandmvc.com;
+        server_name your_site.com www.your_site.com;
 
         return 302 https://$server_name$request_uri;
 
