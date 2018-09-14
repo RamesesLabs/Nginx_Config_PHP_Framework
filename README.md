@@ -53,15 +53,15 @@ Config files for Nginx Server on Ubuntu 18.04 to serve CodeIgniter, Custom PHP F
 
 > sudo chmod 775 /var/www
 
-> sudo chmod 775 /var/www/grandstrandmvc.com
+> sudo chmod 775 /var/www/your_site.com
 
-> sudo chmod 775 /var/www/grandstrandmvc.com/html
+> sudo chmod 775 /var/www/your_site.com/html
 
-> sudo chown -R www-data:www-data /var/www/grandstrandmvc.com
+> sudo chown -R www-data:www-data /var/www/your_site.com
 
-> sudo chown -R www-data:www-data /var/www/grandstrandmvc.com/html
+> sudo chown -R www-data:www-data /var/www/your_site.com/html
 
-> sudo chown -R $USER:$USER /var/www/grandstrandmvc.com
+> sudo chown -R $USER:$USER /var/www/your_site.com
 
 10. Restart the nginx service
 
