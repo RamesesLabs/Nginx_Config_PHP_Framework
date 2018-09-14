@@ -39,16 +39,7 @@ Config files for Nginx Server on Ubuntu 18.04 to serve CodeIgniter, Custom PHP F
 
 > sudo nano /etc/nginx/nginx.conf
 
-6. Create .htaccess file in the public folder of your project or framework. Some frameworks have .htaccess files built in, try the default settings before adding a new .htaccess file to your project. Below is the .htaccess that works with this code:
-
-<IfModule mod_rewrite.c>
-  Options -Multiviews
-  RewriteEngine On
-  RewriteBase /grandstrandmvc.com/public
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule  ^(.+)$ index.php?url=$1 [QSA,L]
-</IfModule>
+6. Create .htaccess file in the public folder of your project or framework. Some frameworks have .htaccess files built in, try the default settings before adding a new .htaccess file to your project. The code in the repository works with the frameworks I have used, you will need to adjust this file as you need, however this code usually always works for me if the framwork doesn't have a default .htaccess file that works. 
 
 7. Test the configuration file using this command. You should get a response stating that sytax is ok and configuration was successful 
 
