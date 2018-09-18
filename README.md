@@ -65,11 +65,11 @@ You may download Nginx at: https://nginx.org/en/linux_packages.html#stable
 
 8. It's a good idea to make sure file permissions are set to be able to write to your files, if you haven't already done so, the following commands will make sure all permissions are set for writing. Adjust setting based to your security needs.
 
-> sudo chmod 757 /var/www
+> sudo chmod 755 /var/www
 
-> sudo chmod 757 /var/www/your_site.com
+> sudo chmod 755 /var/www/your_site.com
 
-> sudo chmod 757 /var/www/your_site.com/html
+> sudo chmod 755 /var/www/your_site.com/html
 
 9. Restart the nginx service
 
